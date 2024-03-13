@@ -24,7 +24,7 @@ function validateLogIn(&$form, &$messages){
 
     if($form['login'] == "admin" && $form['pass'] == "admin"){
         session_start();
-        $_SESSION['role'] = 'user';
+        $_SESSION['role'] = 'admin';
         return true;
     }
     if($form['login'] == "user" && $form['pass'] == "user"){
