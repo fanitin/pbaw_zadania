@@ -40,7 +40,7 @@ if (empty($messages)) {
     $years = intval($years);
     $proc = floatval($proc);
 
-    $result = $kwota + ($kwota * $proc * $years/100);
+    $result = ($kwota + ($kwota * $proc/100)) / ($years*12);
 }
 
 include 'calc_view.php';

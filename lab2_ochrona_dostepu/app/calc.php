@@ -56,7 +56,7 @@ function process(&$kwota, &$years, &$proc, &$messages, &$result){
     if($kwota > 100000 && $role <> 'admin'){
         $messages [] = "Tylko administrator może pracować z kredytem, kwota którego jest wyższa niż 100 000 PLN";
     }else{
-        $result = $kwota + ($kwota * $proc * $years/100);
+        $result = ($kwota + ($kwota * $proc/100)) / ($years*12);
     }
 }
 
