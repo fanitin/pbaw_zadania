@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.2, created on 2024-03-25 16:32:52
+/* Smarty version 4.3.2, created on 2024-03-26 22:49:17
   from 'C:\Tools\XAMPP\htdocs\projects\pbaw_zadania\lab3_szablonowanie\templates\main.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.2',
-  'unifunc' => 'content_66019924a5ce01_33675172',
+  'unifunc' => 'content_660342dd0c8e12_32012977',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '11bdbeab7d36f0fea776efb9342a2491d7be5170' => 
     array (
       0 => 'C:\\Tools\\XAMPP\\htdocs\\projects\\pbaw_zadania\\lab3_szablonowanie\\templates\\main.html',
-      1 => 1711380644,
+      1 => 1711489275,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_66019924a5ce01_33675172 (Smarty_Internal_Template $_smarty_tpl) {
+function content_660342dd0c8e12_32012977 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -29,10 +29,10 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 <head>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="<?php echo (($tmp = $_smarty_tpl->tpl_vars['page_description']->value ?? null)===null||$tmp==='' ? "Opis domyślny" ?? null : $tmp);?>
+	<meta name="description" content="<?php echo (($tmp = $_smarty_tpl->tpl_vars['page_description']->value ?? null)===null||$tmp==='' ? 'Opis domyślny' ?? null : $tmp);?>
 ">
 
-    <title><?php echo (($tmp = $_smarty_tpl->tpl_vars['page_title']->value ?? null)===null||$tmp==='' ? "Tytuł domyślny" ?? null : $tmp);?>
+    <title><?php echo (($tmp = $_smarty_tpl->tpl_vars['page_title']->value ?? null)===null||$tmp==='' ? "jesli page_title nie dziala" ?? null : $tmp);?>
 </title>
 
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure.css">
@@ -106,19 +106,13 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
     <div id="app_content" class="content">
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_32425436666019924a5bf75_38177721', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_711847026660342dd0c8459_97441893', 'content');
 ?>
 
 
     </div>
 
     <div class="footer l-box is-center">
-		<p>
-<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_92838990766019924a5c779_53075529', 'block11');
-?>
-
-		</p>
         <p>Szablon SMARTY. Wykonał Vitalii Kovtun, grupa PAW 2</p>
     </div>
 
@@ -128,12 +122,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_92838990766019924a
 </body>
 </html><?php }
 /* {block 'content'} */
-class Block_32425436666019924a5bf75_38177721 extends Smarty_Internal_Block
+class Block_711847026660342dd0c8459_97441893 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_32425436666019924a5bf75_38177721',
+    0 => 'Block_711847026660342dd0c8459_97441893',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -142,19 +136,4 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 }
 /* {/block 'content'} */
-/* {block 'block11'} */
-class Block_92838990766019924a5c779_53075529 extends Smarty_Internal_Block
-{
-public $subBlocks = array (
-  'block11' => 
-  array (
-    0 => 'Block_92838990766019924a5c779_53075529',
-  ),
-);
-public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
-?>
- Moja własna treść stopki...^_0 <?php
-}
-}
-/* {/block 'block11'} */
 }
