@@ -1,10 +1,11 @@
 {extends file="main.tpl"}
 
 {block name=content}
-<div class="pure-menu pure-menu-horizontal bottom-margin">
-	<a href="{$conf->action_url}logout"  class="pure-menu-heading pure-menu-link">wyloguj</a>
-	<span style="float:right;">użytkownik: {$user->login}, rola: {$user->role}</span>
-</div>
+<!-- Header -->
+		<header id="header">
+			<a href="{$conf->root_path}/index.php" class="logo"><strong>Kalkulator</strong> <span>kredytowy</span></a>
+			<a href="{$conf->action_url}logout" style="float:right">wyloguj</a>
+		</header>
 
 <h2>Kalkulator kredytowy</h2>
 

@@ -16,3 +16,4 @@ switch ($action) {
     case 'logout':
         control('app\\controll', 'LoginCtrl', 'doLogout', ['user', 'admin']);
 }
+

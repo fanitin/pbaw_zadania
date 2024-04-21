@@ -16,10 +16,7 @@
 	<!-- Wrapper -->
 	<div id="wrapper">
 
-		<!-- Header -->
-		<header id="header">
-			<a href="{$conf->root_path}/index.php" class="logo"><strong>Kalkulator</strong> <span>kredytowy</span></a>
-		</header>
+		
 
 		<!-- Main -->
 		<div id="main" class="alt">

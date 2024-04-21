@@ -1,6 +1,10 @@
 {extends file="main.tpl"}
 
 {block name=content}
+<!-- Header -->
+		<header id="header">
+			<a href="{$conf->root_path}/index.php" class="logo"><strong>Kalkulator</strong> <span>kredytowy</span></a>
+		</header>
 <form action="{$conf->action_url}login" method="post">
     <legend>Logowanie do systemu</legend>
     <fieldset>

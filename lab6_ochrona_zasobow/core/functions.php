@@ -3,7 +3,7 @@ function getFrom(&$source,&$idx,&$required,&$required_message){
 	if (isset($source[$idx])){
 		return $source[$idx];
 	} else {
-		if ($required) getMessages()->addError($required_message);
+		if ($required) getMessages()->addErrors($required_message);
 		return null;
 	}
 }
